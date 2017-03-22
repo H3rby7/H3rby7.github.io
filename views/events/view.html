@@ -1,0 +1,18 @@
+<header></header>
+<div class="header-block"></div>
+<div class="content" id="content">
+  <div class="container-fluid events">
+    <div ng-repeat="e in events | filter:types">
+      <event image-url="{{e.imageUrl}}"
+             type="{{e.type}}"
+             name="{{e.name}}"
+             date="{{e.date}}"
+             location="{{e.location}}"
+             ticket-link="{{e.ticketLink}}"
+      ></event>
+      <hr>
+    </div>
+  </div>
+</div>
+<div class="footer-block"></div>
+<footer></footer>

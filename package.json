@@ -1,0 +1,42 @@
+{
+  "name": "mean_improv_frontend",
+  "version": "0.0.1",
+  "description": "Improv CMS on MEAN stack Frontend",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass .scss/main.scss main.css",
+    "sass": "nodemon -e scss --watch .scss --ignore node_modules/ -x \"npm run build-css\"",
+    "test": "standard --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/H3rby7/mean_improv.git"
+  },
+  "keywords": [
+    "mean",
+    "angular",
+    "cms",
+    "node"
+  ],
+  "author": "h3rby7",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/H3rby7/mean_improv/issues"
+  },
+  "homepage": "https://github.com/H3rby7/mean_improv#readme",
+  "dependencies": {
+    "angular": "^1.6.1",
+    "angular-route": "^1.6.1",
+    "angular-ui-bootstrap": "^2.5.0",
+    "blueimp-md5": "^2.6.0",
+    "jquery": "^3.1.1",
+    "masonry": "git://github.com/H3rby7/nospace_masonry"
+  },
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "browserify": "^14.0.0",
+    "node-sass": "^4.5.0",
+    "nodemon": "^1.11.0",
+    "standard": "^8.6.0"
+  }
+}

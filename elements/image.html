@@ -1,0 +1,7 @@
+<div class="ng-image">
+  <div class="hover_container" ng-class="{'showText': hoverEffect === 'showText'}" ng-if="hoverEffect === 'showText'">
+    <ng-transclude></ng-transclude>
+  </div>
+  <div class="image_container" ng-class="{'zoom': hoverEffect === 'zoom'}"
+       style="background-image: url('{{imageUrl}}')"></div>
+</div>

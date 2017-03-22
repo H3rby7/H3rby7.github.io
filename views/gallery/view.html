@@ -1,0 +1,14 @@
+<header></header>
+<div class="header-block"></div>
+<div class="content" id="content">
+  <div class="container-fluid gallery">
+    <div class="nospace_masonry_container" id="nsMasonry">
+      <ng-image ng-repeat="image in images"
+                class="nospace_masonry_item{{image.width + image.height}}"
+                image-url="{{image.url}}"
+                hover-effect="zoom"></ng-image>
+    </div>
+  </div>
+</div>
+<div class="footer-block"></div>
+<footer></footer>

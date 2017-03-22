@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de" ng-app="improv_cms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CMS</title>
+  <base href="/" />
+  <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+  <link href="./main.css" rel="stylesheet">
+  <!-- <script src="node_modules/jquery/dist/jquery.min.js"></script> -->
+  <script src="node_modules/angular/angular.js"></script>
+  <script src="node_modules/angular-route/angular-route.js"></script>
+  <script src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/nospace_masonry/index.js"></script>
+
+  <script src="./app.js"></script>
+  <script src="./validViews.js"></script>
+
+  <!-- Services -->
+  <!--<script src="./services/????.js"></script>-->
+
+  <!-- Header / Footer -->
+  <script src="./header/index.js"></script>
+  <script src="./footer/index.js"></script>
+  <!-- Views/Controllers -->
+  <script src="./views/start/index.js"></script>
+  <script src="views/viewEvent/index.js"></script>
+  <script src="./views/events/index.js"></script>
+  <script src="./views/gallery/index.js"></script>
+  <script src="./views/videos/index.js"></script>
+  <script src="./views/contact/index.js"></script>
+  <script src="./views/login/index.js"></script>
+  <script src="./views/e404/index.js"></script>
+
+  <!-- Elements -->
+  <script src="./elements/index.js"></script>
+
+</head>
+<body>
+<div ng-view></div>
+<!-- <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+</body>
+</html>

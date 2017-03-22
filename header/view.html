@@ -1,0 +1,6 @@
+<div class="navigation">
+    <a href="/"><div class="logo"></div></a>
+    <div class="items">
+        <navigation-point ng-repeat="np in vm.nav" link="{{np.url}}" ng-class="{'active': vm.isActive(np.url)}">{{np.label}}</navigation-point>
+    </div>
+</div>
