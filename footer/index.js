@@ -6,6 +6,10 @@
     {
       url: '/contact',
       label: 'Kontakt'
+    },
+    {
+      url: '/story',
+      label: 'Landing2'
     }
   ]
 
