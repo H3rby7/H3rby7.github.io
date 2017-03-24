@@ -5815,7 +5815,8 @@ button.close {
     display: none !important; } }
 
 html {
-  min-width: 480px; }
+  min-width: 480px;
+  width: 100%; }
 
 body {
   overflow-x: hidden;
@@ -5974,8 +5975,8 @@ footer {
   text-align: center; }
 
 .landing_content .video {
-  width: 500px;
-  max-width: 100%;
+  max-width: 480px;
+  width: 100%;
   overflow: hidden;
   background-color: white;
   border-radius: 8px;
