@@ -5955,19 +5955,6 @@ footer {
   float: right;
   padding: 1em 0; }
 
-.landing div {
-  padding: 0; }
-
-.landing > .row {
-  height: 50vh;
-  min-height: 200px; }
-
-.landing > .row > div {
-  height: inherit; }
-
-.landing_story div {
-  padding: 0; }
-
 .landing_story {
   height: 100vh;
   width: 100vw;
@@ -5975,6 +5962,30 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
+
+.landing_content {
+  color: #fff;
+  /*background-color: $image-overlay-color;*/
+  width: 100%;
+  height: 100%; }
+
+.landing_content .slogan {
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center; }
+
+.landing_content .video {
+  width: 500px;
+  max-width: 100%;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 8px;
+  padding: 6px; }
+
+.landing_content .video,
+.landing_content .slogan {
+  height: 300px;
+  margin: 0 auto; }
 
 .nospace_masonry_container {
   min-width: 496px;
@@ -6051,7 +6062,8 @@ ng-image,
   width: 100%;
   height: 100%;
   display: block;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
 
 .ng-image > .image_container {
   background-color: #222;
@@ -6152,7 +6164,8 @@ ng-video,
 .ng-video {
   width: 100%;
   height: 100%;
-  cursor: pointer; }
+  cursor: pointer;
+  overflow: hidden; }
 
 .video_modal {
   height: 80vh;
@@ -6182,3 +6195,10 @@ yt-container iframe {
 /* gallery */
 .container-fluid.gallery {
   padding: 0; }
+
+.center-child {
+  display: table; }
+
+.center-child > div {
+  display: table-cell;
+  vertical-align: middle; }

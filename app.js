@@ -11,10 +11,6 @@
       name: 'start'
     },
     {
-      url: 'story',
-      name: 'storyLanding'
-    },
-    {
       url: 'event/:id',
       name: 'viewEvent'
     },
