@@ -5814,6 +5814,9 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+html {
+  min-width: 480px; }
+
 body {
   overflow-x: hidden;
   overflow-y: -moz-scrollbars-vertical;
@@ -5821,9 +5824,9 @@ body {
   box-sizing: border-box;
   width: 100%;
   height: 100%;
-  min-height: 100vh;
   background-color: #111 !important;
-  position: relative; }
+  position: relative;
+  margin: 0; }
 
 body::-webkit-scrollbar {
   width: 1em; }
@@ -5835,13 +5838,8 @@ body::-webkit-scrollbar-thumb {
   background-color: #bbb;
   outline: 1px solid #bbb; }
 
-body .content,
-header > div,
-footer > div {
-  width: 100%;
-  max-width: 992px;
-  margin: 0 auto;
-  display: block; }
+body, body > ng-view, body > ng-view > div {
+  width: 100%; }
 
 .content > div {
   background-color: #222 !important; }
@@ -5955,9 +5953,12 @@ footer {
   float: right;
   padding: 1em 0; }
 
+.landing > div {
+  width: 100%; }
+
 .landing > * > div {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
