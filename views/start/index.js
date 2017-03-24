@@ -16,4 +16,18 @@
       controller: 'startCtrl'
     }
   })
+
+  app.directive('startOne', () => {
+    return {
+      templateUrl: 'views/start/one.html'
+    }
+  })
+
+  app.directive('startTwo', () => {
+    return {
+      templateUrl: 'views/start/two.html'
+    }
+  })
+
+
 })()

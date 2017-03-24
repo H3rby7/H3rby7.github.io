@@ -5955,16 +5955,14 @@ footer {
   float: right;
   padding: 1em 0; }
 
-.landing_story {
+.landing > * > div {
   height: 100vh;
   width: 100vw;
-  background-image: url("images/paper.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
 
 .landing_content {
-  color: #fff;
   /*background-color: $image-overlay-color;*/
   width: 100%;
   height: 100%; }
@@ -5983,9 +5981,38 @@ footer {
   padding: 6px; }
 
 .landing_content .video,
-.landing_content .slogan {
+.landing_content .slogan,
+.landing .two .offer_item {
   height: 300px;
   margin: 0 auto; }
+
+.landing .one {
+  color: #fff;
+  background-image: url("images/paper.jpg");
+  min-height: 630px; }
+
+.landing .two {
+  height: auto;
+  padding: 50px 0;
+  background-color: #fff; }
+
+.two .offer_item {
+  padding: 0 10%; }
+
+.two .offer_item > a {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  color: inherit;
+  text-decoration: inherit !important; }
+
+.two .offer_item ng-image {
+  height: 225px; }
+
+/* Min-Heights on resize */
+@media (min-width: 992px) {
+  .landing .one {
+    min-height: 330px; } }
 
 .nospace_masonry_container {
   min-width: 496px;
