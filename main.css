@@ -5814,10 +5814,6 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
-html {
-  min-width: 480px;
-  width: 100%; }
-
 body {
   overflow-x: hidden;
   overflow-y: -moz-scrollbars-vertical;
@@ -5971,35 +5967,42 @@ footer {
 
 .landing_content .slogan {
   font-weight: 600;
-  font-size: 30px;
-  text-align: center; }
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 30px; }
 
 .landing_content .video {
   max-width: 480px;
   width: 100%;
   overflow: hidden;
-  background-color: white;
+  background-color: #222;
   border-radius: 8px;
   padding: 6px; }
 
 .landing_content .video,
-.landing_content .slogan,
 .landing .two .offer_item {
-  height: 300px;
-  margin: 0 auto; }
+  height: 280px;
+  margin: 10px auto; }
 
 .landing .one {
   color: #fff;
   background-image: url("images/paper.jpg");
-  min-height: 630px; }
+  min-height: 930px; }
 
 .landing .two {
   height: auto;
-  padding: 50px 0;
   background-color: #fff; }
 
+.two .heading {
+  font-size: 40px;
+  font-weight: 500;
+  display: inline-block;
+  padding: 0.5em;
+  text-align: center;
+  width: 100%; }
+
 .two .offer_item {
-  padding: 0 10%; }
+  padding-bottom: 10%; }
 
 .two .offer_item > a {
   margin-right: auto;
@@ -6014,7 +6017,7 @@ footer {
 /* Min-Heights on resize */
 @media (min-width: 992px) {
   .landing .one {
-    min-height: 330px; } }
+    min-height: 630px; } }
 
 .nospace_masonry_container {
   min-width: 496px;
