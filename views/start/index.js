@@ -17,15 +17,21 @@
     }
   })
 
-  app.directive('startOne', () => {
+  app.directive('startStart', () => {
     return {
-      templateUrl: 'views/start/one.html'
+      templateUrl: 'views/start/start.html'
     }
   })
 
-  app.directive('startTwo', () => {
+  app.directive('startUs', () => {
     return {
-      templateUrl: 'views/start/two.html'
+      templateUrl: 'views/start/improv_and_us.html'
+    }
+  })
+
+  app.directive('startOffers', () => {
+    return {
+      templateUrl: 'views/start/offers.html'
     }
   })
 

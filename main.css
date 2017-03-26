@@ -5956,7 +5956,7 @@ footer {
 .landing > * > div {
   width: 100%; }
 
-.one, .two {
+.landing .start, .landing .improv_and_us, .landing .offers {
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -5965,39 +5965,38 @@ footer {
 .landing_content {
   width: 100%;
   height: 100%; }
-
-.landing_content .slogan {
-  font-weight: 600;
-  font-size: 40px;
-  text-align: center;
-  margin-bottom: 30px; }
-
-.landing_content .video {
-  max-width: 480px;
-  width: 100%;
-  overflow: hidden;
-  background-color: #222;
-  /* border-radius: $border-radius-base;*/
-  padding: 6px; }
+  .landing_content .slogan {
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px; }
+  .landing_content .video {
+    max-width: 480px;
+    width: 100%;
+    overflow: hidden; }
 
 .landing_content .video,
-.landing .two .offer_item {
+.landing .offers .offer_item {
   height: 280px;
   margin: 10px auto; }
 
-.landing .one {
+.landing .start {
   color: #fff;
-  background-image: url("../images/book.jpeg");
-  min-height: 930px; }
+  background-image: url("../images/candle.jpeg"); }
 
-.one .landing_content {
-  background-color: rgba(30, 30, 30, 0.3); }
+.start .landing_content {
+  background-color: rgba(30, 30, 30, 0); }
 
-.landing .two {
+.landing .improv_and_us {
+  height: auto;
+  box-sizing: border-box;
+  padding: 50px; }
+
+.landing .offers {
   height: auto;
   background-color: #fff; }
 
-.two .heading {
+.offers .heading {
   font-size: 40px;
   font-weight: 500;
   display: inline-block;
@@ -6005,23 +6004,18 @@ footer {
   text-align: center;
   width: 100%; }
 
-.two .offer_item {
+.offers .offer_item {
   padding-bottom: 10%; }
 
-.two .offer_item > a {
+.offers .offer_item > a {
   margin-right: auto;
   margin-left: auto;
   text-align: center;
   color: inherit;
   text-decoration: inherit !important; }
 
-.two .offer_item ng-image {
+.offers .offer_item ng-image {
   height: 225px; }
-
-/* Min-Heights on resize */
-@media (min-width: 992px) {
-  .landing .one {
-    min-height: 630px; } }
 
 .nospace_masonry_container {
   width: 100%;
