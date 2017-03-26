@@ -5961,7 +5961,6 @@ footer {
   background-size: cover; }
 
 .landing_content {
-  /*background-color: $image-overlay-color;*/
   width: 100%;
   height: 100%; }
 
@@ -5976,7 +5975,7 @@ footer {
   width: 100%;
   overflow: hidden;
   background-color: #222;
-  border-radius: 8px;
+  /* border-radius: $border-radius-base;*/
   padding: 6px; }
 
 .landing_content .video,
@@ -5986,8 +5985,11 @@ footer {
 
 .landing .one {
   color: #fff;
-  background-image: url("images/paper.jpg");
+  background-image: url("../images/script.jpeg");
   min-height: 930px; }
+
+.one .landing_content {
+  background-color: rgba(30, 30, 30, 0.7); }
 
 .landing .two {
   height: auto;
@@ -6020,8 +6022,6 @@ footer {
     min-height: 630px; } }
 
 .nospace_masonry_container {
-  min-width: 496px;
-  max-width: 992px;
   width: 100%;
   margin: 0 auto !important;
   box-sizing: border-box;
