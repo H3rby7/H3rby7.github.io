@@ -5839,7 +5839,7 @@ body, body > ng-view, body > ng-view > div {
   width: 100%; }
 
 .content > div {
-  background-color: #222 !important; }
+  background-color: #222; }
 
 .gridbox {
   height: 100%;
@@ -6269,7 +6269,8 @@ yt-container iframe {
 
 /* gallery */
 .container-fluid.gallery {
-  padding: 0; }
+  padding: 0;
+  background-color: #000000; }
 
 .center-child {
   display: table; }
