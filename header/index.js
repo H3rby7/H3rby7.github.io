@@ -33,6 +33,19 @@
     }
   })
 
+  app.directive('burgernavPoint', () => {
+    return {
+      restrict: 'E',
+      templateUrl: 'header/burgernav-point.html',
+      scope: {
+        link: '@',
+        active: '@'
+      },
+      transclude: true
+    }
+  })
+
+
   app.directive('header', () => {
     return {
       restrict: 'E',
@@ -47,7 +60,14 @@
   function Controller ($scope, $location) {
     let vm = this
     vm.isActive = isActive
+    vm.burgerMenuOpen = false
     vm.nav = navigationLinks
+    vm.toggleBurgerMenu = toggleBurgerMenu
+
+    function toggleBurgerMenu() {
+      vm.burgerMenuOpen = !vm.burgerMenuOpen
+      console.log(vm.burgerMenuOpen)
+    }
 
     function isActive (link) {
       return link === $location.path()
